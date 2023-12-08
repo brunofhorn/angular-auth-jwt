@@ -8,13 +8,13 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
-app.post("/sign", (req, res) => {
-  const email = "dener@vidafullstack.com.br";
+app.post("/signIn", (req, res) => {
+  const email = "bruno@gmail.com";
   const password = "123";
 
   if (req.body.email === email && req.body.password === password) {
     const data = {
-      nome: "Dener Troquatte",
+      nome: "Bruno Fernandes",
       email,
       role: ["sysAdmin"],
     };
